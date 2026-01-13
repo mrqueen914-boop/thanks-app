@@ -2,18 +2,17 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>القائمة</title>
+  <title>Velora | القائمة</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark-page">
-
-  <h2>القائمة</h2>
-
-  <button onclick="goGroup()">القروب</button>
-  <button onclick="goChannel()">القناة</button>
-  <button onclick="goChat()">المحادثات</button>
-  <button onclick="goProfile()">الحساب</button>
-  <button onclick="goOutfit()">تنسيق الملابس</button>
+<body class="center">
+  <div class="card">
+    <h2>القائمة</h2>
+    <button onclick="goPage('chat.html')">البوت</button>
+    <button onclick="goPage('group.html')">القروب</button>
+    <button onclick="goPage('fashion.html')">تنسيق الملابس</button>
+    <button onclick="goPage('outfit.html')">الأطقم</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
