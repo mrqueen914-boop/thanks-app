@@ -16,7 +16,7 @@ body {
   background: white;
   padding: 25px;
   border-radius: 12px;
-  width: 300px;
+  width: 320px;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
@@ -65,4 +65,11 @@ header {
 input {
   flex: 1;
   padding: 8px;
+}
+
+.fashion-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 15px;
 }
