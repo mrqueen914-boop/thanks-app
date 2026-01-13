@@ -1,8 +1,5 @@
-function goChat() {
-  window.location.href = "menu.html";
-}
-
-function goGuest() {
+function goMenu(userType) {
+  // جميع أنواع المستخدمين تروح للقائمة الرئيسية
   window.location.href = "menu.html";
 }
 
@@ -13,8 +10,7 @@ function goPage(page) {
 function sendMsg() {
   const input = document.getElementById("msgInput");
   const chat = document.getElementById("chatBox");
-
-  if (input.value.trim() === "") return;
+  if (!input.value.trim()) return;
 
   const userMsg = document.createElement("div");
   userMsg.className = "msg";
