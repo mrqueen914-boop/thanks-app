@@ -1,44 +1,30 @@
-// التنقل بين الصفحات
 function goChat() {
-  window.location.href = "chat.html";
-}
-
-function goMenu() {
   window.location.href = "menu.html";
 }
 
-function goGroup() {
-  window.location.href = "group.html";
+function goGuest() {
+  window.location.href = "menu.html";
 }
 
-function goOutfit() {
-  window.location.href = "outfit.html";
+function goPage(page) {
+  window.location.href = page;
 }
 
-function goLogin() {
-  window.location.href = "index.html";
+function sendMsg() {
+  const input = document.getElementById("msgInput");
+  const chat = document.getElementById("chatBox");
+
+  if (input.value.trim() === "") return;
+
+  const userMsg = document.createElement("div");
+  userMsg.className = "msg";
+  userMsg.textContent = input.value;
+  chat.appendChild(userMsg);
+
+  const botMsg = document.createElement("div");
+  botMsg.className = "msg bot";
+  botMsg.textContent = "تم استلام رسالتك 🤍";
+  chat.appendChild(botMsg);
+
+  input.value = "";
 }
-
-// أزرار غير جاهزة الآن
-function goChannel() {
-  alert("القناة ستكون متاحة قريبًا ✨");
-}
-
-function goProfile() {
-  alert("صفحة الحساب قيد التطوير 👤");
-}
-
-// إرسال رسالة (واجهة فقط)
-document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll(".send-btn");
-
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      const input = btn.previousElementSibling;
-      if (input && input.value.trim() !== "") {
-        alert("تم إرسال الرسالة (تجريبي)");
-        input.value = "";
-      }
-    });
-  });
-});
