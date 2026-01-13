@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8" />
-  <title>Thanks</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Velora | تسجيل الدخول</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="login-page">
+<body class="center">
+  <div class="card">
+    <h1>Velora</h1>
+    <p>اختاري طريقة الدخول</p>
 
-  <div class="login-container">
-    <h1>Thanks</h1>
-
-    <button class="google-btn" onclick="loginGoogle()">
-      المتابعة باستخدام حساب Google
-    </button>
-
-    <button class="login-btn" onclick="goChat()">
-      تسجيل
-    </button>
-
-    <button class="guest-btn" onclick="goChat()">
-      ضيف
-    </button>
+    <button onclick="goChat()">تسجيل دخول</button>
+    <button onclick="goGuest()">الدخول كضيف</button>
+    <button class="google">تسجيل عبر Google</button>
   </div>
 
   <script src="script.js"></script>
