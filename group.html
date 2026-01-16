@@ -2,20 +2,23 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>Velora | القروب</title>
+  <title>قروب</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>👥 القروب</header>
-
-  <div class="card">
-    <p>هذا القروب للعرض فقط، الرسائل محدودة حسب النظام.</p>
-    <ul>
-      <li>المسجل: يرسل للبوت 21 رسالة، للقروب 6 رسائل</li>
-      <li>الضيف: يرسل للبوت 6 رسائل، للقروب يشوف بس لا يقرأ</li>
-    </ul>
+  <div class="header">
+    <h2>اسم القروب</h2>
   </div>
 
-  <script src="script.js"></script>
+  <div class="messages" id="messages">
+    <!-- الرسائل تظهر هنا -->
+    <p class="system">مرحباً بكم في القروب! المسجل يمكنه إرسال 6 رسائل، الضيف يشاهد فقط.</p>
+  </div>
+
+  <div class="input-area">
+    <input type="text" id="groupInput" placeholder="اكتب رسالتك هنا..." />
+    <button onclick="sendGroupMessage()">إرسال</button>
+  </div>
 </body>
 </html>
