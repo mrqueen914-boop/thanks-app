@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>Velora | تسجيل الدخول</title>
+  <meta charset="UTF-8" />
+  <title>Velora – تسجيل الدخول</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="center">
-  <div class="card">
-    <h1>Velora</h1>
-    <p>اختاري طريقة الدخول</p>
+<body class="auth-page">
 
-    <button onclick="goMenu('user')">تسجيل دخول</button>
-    <button onclick="goMenu('guest')">الدخول كضيف</button>
-    <button class="google" onclick="goMenu('google')">تسجيل عبر Google</button>
+  <div class="auth-box">
+    <h1>Thanks 💗</h1>
+    <p>أهلًا بك في Velora</p>
+
+    <button class="btn google">التسجيل باستخدام Google</button>
+    <button class="btn normal" onclick="goMenu('user')">تسجيل</button>
+    <button class="btn guest" onclick="goMenu('guest')">الدخول كضيف</button>
   </div>
 
   <script src="script.js"></script>
