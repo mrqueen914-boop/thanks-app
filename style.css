@@ -1,75 +1,40 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f6f6fb;
-  margin: 0;
-  padding: 0;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.card {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  width: 320px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-button {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 8px;
-  background: #7b6cff;
+/* زر الثلاث خطوط */
+.menu-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  font-size: 26px;
   color: white;
   cursor: pointer;
+  z-index: 1001;
 }
 
-button.google {
-  background: #db4437;
+/* القائمة الجانبية */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: #111;
+  padding: 20px;
+  transition: 0.3s;
+  z-index: 1000;
 }
 
-header {
-  background: #7b6cff;
+.side-menu h3 {
   color: white;
-  padding: 15px;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
-.chat-box {
-  padding: 15px;
-  height: 60vh;
-  overflow-y: auto;
+.side-menu a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
-.msg {
-  margin: 8px 0;
-}
-
-.bot {
-  color: #7b6cff;
-}
-
-.input-box {
-  display: flex;
-  padding: 10px;
-}
-
-input {
-  flex: 1;
-  padding: 8px;
-}
-
-.fashion-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 15px;
+.side-menu a:hover {
+  color: white;
 }
