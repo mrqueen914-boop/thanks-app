@@ -7,6 +7,19 @@
 </head>
 <body class="bot-page">
 
+  <!-- زر القائمة -->
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <!-- القائمة الجانبية -->
+  <div class="side-menu" id="sideMenu">
+    <h3>القائمة</h3>
+    <a href="#">🤍 القروب</a>
+    <a href="chat.html">🤖 البوت</a>
+    <a href="#">💬 المحادثات القديمة</a>
+    <a href="#">👤 الملف الشخصي</a>
+  </div>
+
+  <!-- البوت -->
   <div class="bot-container">
     <div class="bot-header">كيف يمكنني مساعدتك؟</div>
 
@@ -23,3 +36,11 @@
   <script src="script.js"></script>
 </body>
 </html>
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+  if (menu.style.right === "0px") {
+    menu.style.right = "-250px";
+  } else {
+    menu.style.right = "0px";
+  }
+}
