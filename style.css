@@ -38,3 +38,25 @@
 .side-menu a:hover {
   color: white;
 }
+// ربط القوائم بالصفحات
+document.addEventListener('DOMContentLoaded', () => {
+  // القائم الرئيسية / المينيو
+  const menuBot = document.getElementById('menu-bot');
+  const menuGroup = document.getElementById('menu-group');
+  const menuHistory = document.getElementById('menu-history');
+  const menuProfile = document.getElementById('menu-profile');
+
+  if(menuBot) menuBot.addEventListener('click', () => window.location.href = 'chat.html');
+  if(menuGroup) menuGroup.addEventListener('click', () => window.location.href = 'group.html');
+  if(menuHistory) menuHistory.addEventListener('click', () => window.location.href = 'history.html');
+  if(menuProfile) menuProfile.addEventListener('click', () => window.location.href = 'profile.html');
+
+  // أزرار صفحة التسجيل
+  const btnGuest = document.getElementById('btn-guest');
+  const btnGoogle = document.getElementById('btn-google');
+  const btnRegister = document.getElementById('btn-register');
+
+  if(btnGuest) btnGuest.addEventListener('click', () => window.location.href = 'chat.html?type=guest');
+  if(btnGoogle) btnGoogle.addEventListener('click', () => window.location.href = 'chat.html?type=google');
+  if(btnRegister) btnRegister.addEventListener('click', () => window.location.href = 'chat.html?type=register');
+});
