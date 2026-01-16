@@ -2,19 +2,22 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>Velora | البوت</title>
+  <title>Velora Bot</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>🤖 بوت Velora</header>
+<body class="bot-page">
 
-  <div class="chat-box" id="chatBox">
-    <div class="msg bot">أهلاً فيك ✨</div>
-  </div>
+  <div class="bot-container">
+    <div class="bot-header">كيف يمكنني مساعدتك؟</div>
 
-  <div class="input-box">
-    <input type="text" id="msgInput" placeholder="اكتبي رسالتك">
-    <button onclick="sendMsg()">إرسال</button>
+    <div class="bot-messages" id="messages">
+      <div class="bot-msg">أهلًا بك في Velora ✨</div>
+    </div>
+
+    <div class="bot-input">
+      <input type="text" id="userInput" placeholder="اكتب طلبك هنا..." />
+      <button onclick="sendMessage()">إرسال</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
